@@ -19,7 +19,9 @@ export class LoginPage {
   }
   login(user : User){
     this.userService.userLogin.signInWithEmail(user).then(user => {
-      this.storage.set('user_id', user.uid);
+      let user_id = {} as any;
+      user_id = user;
+      this.storage.set('user_id', user_id.uid);
       this.navCtrl.setRoot(HomePage);
     })
     .catch(err => {
