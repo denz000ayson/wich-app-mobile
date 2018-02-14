@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { User } from "../../models/user.model";
-import { UserService } from "../../services/user.service";
+import { User } from "../../services/user/user.model";
+import { UserService } from "../../services/user/user.service";
+
 @IonicPage()
 @Component({
   selector: 'page-register',
@@ -19,7 +20,7 @@ export class RegisterPage {
     console.log('ionViewDidLoad RegisterPage');
   }
   register(user : User){
-  	this.userService.userRegister.signUpWithEmail(user.email, user.password)
+  	this.userService.userRegister.signUpWithEmail(user)
   		.then(res => {
   			console.log(res);
   		})
