@@ -4,6 +4,7 @@ import { User } from "../../services/user/user.model";
 import { UserService } from "../../services/user/user.service";
 import { Storage } from '@ionic/storage';
 import { HomePage } from '../home/home';
+
 @Component({
   selector: 'page-login',
   templateUrl: 'login.html'
@@ -19,7 +20,6 @@ export class LoginPage {
   login(user : User){
     this.userService.userLogin.signInWithEmail(user).then(user => {
       this.storage.set('user_id', user.uid);
-      this.storage.set('user_email', user.email);
       this.navCtrl.setRoot(HomePage);
     })
     .catch(err => {

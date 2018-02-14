@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { User } from "../../services/user/user.model";
 import { UserService } from "../../services/user/user.service";
+import { HomePage } from '../home/home';
 
 @IonicPage()
 @Component({
@@ -16,13 +17,13 @@ export class RegisterPage {
   	public userService : UserService) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad RegisterPage');
+  ionViewWillEnter() {
+   this.userService.getData();
   }
   register(user : User){
   	this.userService.userRegister.signUpWithEmail(user)
   		.then(res => {
-  			console.log(res);
+  			 this.navCtrl.setRoot(HomePage);
   		})
   		.catch(err => { console.log(err) })
   }
