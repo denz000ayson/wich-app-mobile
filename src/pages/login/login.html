@@ -1,3 +1,4 @@
+
 <ion-header>
   <ion-navbar>
     <button ion-button menuToggle>
@@ -6,15 +7,37 @@
     <ion-title>Login</ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content>
+
+<ion-content padding>
+  <div class="container">
+    <ion-list>
+      <ion-item>
+        <!-- <ion-label><ion-icon name="mail"></ion-icon></ion-label> -->
+        <ion-input class="rounded" type="text" value="" placeholder="Email Address" [(ngModel)]="user.email">
+         <ion-icon [ngClass]="{'hide': true }" name="ios-information-circle-outline" ></ion-icon> </ion-input>
+
+      </ion-item>
+      <ion-item class="rounded">
+        <ion-input class="rounded" type="text" value="" placeholder="Password" [(ngModel)]="user.password"></ion-input>
+      </ion-item>
+
+      <button class="btn-login" ion-button color="secondary" (click)="login()">Login</button>
+      <button class="btn-facebook" ion-button><ion-icon name="logo-facebook"></ion-icon> Continue with Facebook</button>
+      <button class="btn-google" ion-button><ion-icon ios="ios-mail" md="md-mail"></ion-icon> Continue with Google</button>
+      <button class="btn-register" ion-button color="secondary" (click)="register()">or create an account..</button>
+    </ion-list>
+  </div>
+</ion-content>
+
+<!-- <ion-content>
   <ion-item>
     <ion-label floating>Email</ion-label>
-    <ion-input type="text" [(ngModel)]="user.email"></ion-input> 
+    <ion-input type="text" [(ngModel)]="user.email"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label floating>Password</ion-label>
-    <ion-input type="password" [(ngModel)]="user.password"></ion-input> 
-  </ion-item> 
+    <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+  </ion-item>
   <button ion-button (click)="login()">Login</button>
   <button ion-button (click)="register()">Register</button>
-</ion-content>
+</ion-content> -->

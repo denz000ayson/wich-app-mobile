@@ -18,7 +18,7 @@ import { CONFIG_FIREBASE } from '../shared/config';
     MyApp,
     HomePage,
     LoginPage,
-  
+
   ],
   imports: [
     BrowserModule,
@@ -31,7 +31,7 @@ import { CONFIG_FIREBASE } from '../shared/config';
     MyApp,
     HomePage,
     LoginPage,
-    
+
   ],
   providers: [
     StatusBar,

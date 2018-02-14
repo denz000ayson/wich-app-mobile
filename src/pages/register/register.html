@@ -12,15 +12,32 @@
 
 </ion-header>
 
-
 <ion-content padding>
+  <div class="container">
+    <ion-list>
+      <button class="btn-facebook" ion-button><ion-icon name="logo-facebook"></ion-icon> Sign Up with Facebook</button>
+      <button class="btn-google" ion-button><ion-icon name="logo-google"></ion-icon> Sign Up with Google</button>
+
+      <ion-item>
+        <ion-label>or</ion-label>
+      </ion-item>
+
+      <button class="btn-login" ion-button color="secondary"><ion-icon ios="ios-mail" md="md-mail"></ion-icon> Sign Up with Email</button>
+      <button class="btn-register" ion-button color="secondary"><ion-icon name="phone-portrait"></ion-icon>Sign Up with Mobile number</button>
+
+      <hr>
+    </ion-list>
+  </div>
+</ion-content>
+
+<!-- <ion-content padding>
 <ion-item>
     <ion-label floating>Email</ion-label>
-    <ion-input type="text" [(ngModel)]="user.email"></ion-input> 
+    <ion-input type="text" [(ngModel)]="user.email"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label floating>Password</ion-label>
-    <ion-input type="password" [(ngModel)]="user.password"></ion-input> 
-  </ion-item> 
+    <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+  </ion-item>
   <button ion-button (click)="register(user)">Register</button>
-</ion-content>
+</ion-content> -->
