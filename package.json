@@ -68,7 +68,8 @@
             "cordova-plugin-facebook4": {
                 "APP_ID": "104909523652564",
                 "APP_NAME": "wichapp-login"
-            }
+            },
+            "cordova-plugin-compat": {}
         },
         "platforms": [
             "android",

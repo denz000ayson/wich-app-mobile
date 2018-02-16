@@ -1,6 +1,6 @@
 webpackJsonp([3],{
 
-/***/ 201:
+/***/ 202:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -56,7 +56,7 @@ var HomePage = (function () {
 
 /***/ }),
 
-/***/ 214:
+/***/ 215:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -69,7 +69,7 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 214;
+webpackEmptyAsyncContext.id = 215;
 
 /***/ }),
 
@@ -78,15 +78,15 @@ webpackEmptyAsyncContext.id = 214;
 
 var map = {
 	"../pages/register/modal/sign-email/sign-email.module": [
-		862,
+		863,
 		2
 	],
 	"../pages/register/modal/sign-mobile/sign-mobile.module": [
-		863,
+		864,
 		1
 	],
 	"../pages/register/register.module": [
-		864,
+		865,
 		0
 	]
 };
@@ -106,7 +106,7 @@ module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 450:
+/***/ 451:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -115,7 +115,7 @@ module.exports = webpackAsyncContext;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_user_user_service__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_home__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_home__ = __webpack_require__(202);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -178,7 +178,7 @@ var LoginPage = (function () {
 
 /***/ }),
 
-/***/ 451:
+/***/ 452:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -237,7 +237,7 @@ var SignEmail = (function () {
 
 /***/ }),
 
-/***/ 452:
+/***/ 453:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -282,7 +282,7 @@ var SignMobile = (function () {
 
 /***/ }),
 
-/***/ 453:
+/***/ 454:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -332,13 +332,13 @@ var ResetPassword = (function () {
 
 /***/ }),
 
-/***/ 454:
+/***/ 455:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(455);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(459);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(456);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(460);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -346,28 +346,29 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 459:
+/***/ 460:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ionic_native_status_bar__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ionic_native_status_bar__ = __webpack_require__(216);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_splash_screen__ = __webpack_require__(220);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angularfire2_auth__ = __webpack_require__(226);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angularfire2_database__ = __webpack_require__(233);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_config__ = __webpack_require__(532);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_config__ = __webpack_require__(533);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_platform_browser__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_ionic_angular__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_storage__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_component__ = __webpack_require__(861);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_home_home__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_login_login__ = __webpack_require__(450);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_register_modal_sign_email_sign_email__ = __webpack_require__(451);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_register_modal_sign_mobile_sign_mobile__ = __webpack_require__(452);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_register_modal_reset_password_reset_password__ = __webpack_require__(453);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__services_user_user_service__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_facebook__ = __webpack_require__(318);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__app_component__ = __webpack_require__(862);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_home_home__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_login_login__ = __webpack_require__(451);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_register_modal_sign_email_sign_email__ = __webpack_require__(452);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_register_modal_sign_mobile_sign_mobile__ = __webpack_require__(453);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_register_modal_reset_password_reset_password__ = __webpack_require__(454);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__services_user_user_service__ = __webpack_require__(60);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -375,6 +376,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 //Modules
+
 
 
 
@@ -401,17 +403,17 @@ var AppModule = (function () {
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_7__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_10__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_11__pages_home_home__["a" /* HomePage */],
-                __WEBPACK_IMPORTED_MODULE_12__pages_login_login__["a" /* LoginPage */],
+                __WEBPACK_IMPORTED_MODULE_11__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_12__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_login_login__["a" /* LoginPage */],
                 //Modals
-                __WEBPACK_IMPORTED_MODULE_13__pages_register_modal_sign_email_sign_email__["a" /* SignEmail */],
-                __WEBPACK_IMPORTED_MODULE_14__pages_register_modal_sign_mobile_sign_mobile__["a" /* SignMobile */],
-                __WEBPACK_IMPORTED_MODULE_15__pages_register_modal_reset_password_reset_password__["a" /* ResetPassword */]
+                __WEBPACK_IMPORTED_MODULE_14__pages_register_modal_sign_email_sign_email__["a" /* SignEmail */],
+                __WEBPACK_IMPORTED_MODULE_15__pages_register_modal_sign_mobile_sign_mobile__["a" /* SignMobile */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_register_modal_reset_password_reset_password__["a" /* ResetPassword */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_6__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_8_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_10__app_component__["a" /* MyApp */], {}, {
+                __WEBPACK_IMPORTED_MODULE_8_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_11__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/register/modal/sign-email/sign-email.module#SignEmailPageModule', name: 'SignEmail', segment: 'sign-email', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/register/modal/sign-mobile/sign-mobile.module#SignMobilePageModule', name: 'SignMobile', segment: 'sign-mobile', priority: 'low', defaultHistory: [] },
@@ -425,19 +427,20 @@ var AppModule = (function () {
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_8_ionic_angular__["a" /* IonicApp */]],
             entryComponents: [
-                __WEBPACK_IMPORTED_MODULE_10__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_11__pages_home_home__["a" /* HomePage */],
-                __WEBPACK_IMPORTED_MODULE_12__pages_login_login__["a" /* LoginPage */],
+                __WEBPACK_IMPORTED_MODULE_11__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_12__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_login_login__["a" /* LoginPage */],
                 //Modals
-                __WEBPACK_IMPORTED_MODULE_13__pages_register_modal_sign_email_sign_email__["a" /* SignEmail */],
-                __WEBPACK_IMPORTED_MODULE_14__pages_register_modal_sign_mobile_sign_mobile__["a" /* SignMobile */],
-                __WEBPACK_IMPORTED_MODULE_15__pages_register_modal_reset_password_reset_password__["a" /* ResetPassword */]
+                __WEBPACK_IMPORTED_MODULE_14__pages_register_modal_sign_email_sign_email__["a" /* SignEmail */],
+                __WEBPACK_IMPORTED_MODULE_15__pages_register_modal_sign_mobile_sign_mobile__["a" /* SignMobile */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_register_modal_reset_password_reset_password__["a" /* ResetPassword */]
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_0__ionic_native_status_bar__["a" /* StatusBar */],
                 __WEBPACK_IMPORTED_MODULE_1__ionic_native_splash_screen__["a" /* SplashScreen */],
                 { provide: __WEBPACK_IMPORTED_MODULE_7__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_8_ionic_angular__["b" /* IonicErrorHandler */] },
-                __WEBPACK_IMPORTED_MODULE_16__services_user_user_service__["a" /* UserService */]
+                __WEBPACK_IMPORTED_MODULE_10__ionic_native_facebook__["a" /* Facebook */],
+                __WEBPACK_IMPORTED_MODULE_17__services_user_user_service__["a" /* UserService */]
             ]
         })
     ], AppModule);
@@ -448,7 +451,7 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 532:
+/***/ 533:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -473,10 +476,11 @@ var CONFIG_FIREBASE = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angularfire2_auth__ = __webpack_require__(226);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__ = __webpack_require__(233);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Rx__ = __webpack_require__(552);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_Rx__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase__ = __webpack_require__(808);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_firebase__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_facebook__ = __webpack_require__(318);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Rx__ = __webpack_require__(553);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_Rx__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_firebase__ = __webpack_require__(809);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_firebase__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -490,13 +494,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 //we use main firebase plugin for facebook login
 
 var UserService = (function () {
-    function UserService(firebaseAuth, firebaseList) {
+    function UserService(firebaseAuth, firebaseList, fb) {
         var _this = this;
         this.firebaseAuth = firebaseAuth;
         this.firebaseList = firebaseList;
+        this.fb = fb;
         this.user = {};
         this.userRegister = {
             signUpWithEmail: function (userForm) {
@@ -528,17 +534,24 @@ var UserService = (function () {
             },
             signInWithFaceBook: function () {
                 return new Promise(function (resolve, reject) {
-                    var provider = new __WEBPACK_IMPORTED_MODULE_4_firebase___default.a.auth.FacebookAuthProvider();
-                    __WEBPACK_IMPORTED_MODULE_4_firebase___default.a.auth().signInWithRedirect(provider).then(function () {
-                        __WEBPACK_IMPORTED_MODULE_4_firebase___default.a.auth().getRedirectResult().then(function (result) {
-                            resolve(result);
-                        })
-                            .catch(function (err) {
-                            reject(err);
+                    // let provider = new firebase.auth.FacebookAuthProvider();
+                    // firebase.auth().signInWithRedirect(provider).then(() => {
+                    // 	firebase.auth().getRedirectResult().then((result) => {
+                    // 		resolve(result);
+                    // 	})
+                    // 	.catch(err => {
+                    // 		reject(err);
+                    // 	})
+                    // })
+                    // .catch(err => {
+                    // 	reject(err);
+                    // })
+                    _this.fb.login(["email"]).then(function (res) {
+                        // console.log(new firebase.auth.FacebookAuthProvider.credential(res.authResponse.accessToken));
+                        var credential = __WEBPACK_IMPORTED_MODULE_5_firebase___default.a.auth.FacebookAuthProvider.credential(res.authResponse.accessToken);
+                        _this.firebaseAuth.auth.signInWithCredential(credential).then(function (info) {
+                            resolve(info);
                         });
-                    })
-                        .catch(function (err) {
-                        reject(err);
                     });
                 });
             }
@@ -573,7 +586,8 @@ var UserService = (function () {
     UserService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_angularfire2_auth__["a" /* AngularFireAuth */],
-            __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__["a" /* AngularFireDatabase */]])
+            __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__["a" /* AngularFireDatabase */],
+            __WEBPACK_IMPORTED_MODULE_3__ionic_native_facebook__["a" /* Facebook */]])
     ], UserService);
     return UserService;
 }());
@@ -582,17 +596,17 @@ var UserService = (function () {
 
 /***/ }),
 
-/***/ 861:
+/***/ 862:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(216);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(220);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_login_login__ = __webpack_require__(450);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_login_login__ = __webpack_require__(451);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -651,5 +665,5 @@ var MyApp = (function () {
 
 /***/ })
 
-},[454]);
+},[455]);
 //# sourceMappingURL=main.js.map

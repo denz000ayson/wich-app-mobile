@@ -9,7 +9,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { IonicStorageModule } from '@ionic/storage';
-
+import { Facebook } from '@ionic-native/facebook';
 //Pages
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -56,6 +56,7 @@ import { UserService } from '../services/user/user.service';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
+    Facebook,
     UserService
   ]
 })

@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { User } from './user.model';
 import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
+import { Facebook } from '@ionic-native/facebook';
 import "rxjs/Rx";
 
 //we use main firebase plugin for facebook login
@@ -13,7 +14,8 @@ export class UserService {
 	userList: AngularFireList<any>;
 	constructor(
 		private firebaseAuth : AngularFireAuth,
-		private firebaseList : AngularFireDatabase
+		private firebaseList : AngularFireDatabase,
+		private fb : Facebook
 		) { }
 	getData() {
     this.userList = this.firebaseList.list('profiles');
@@ -50,18 +52,24 @@ userLogin = {
 
 	signInWithFaceBook : () => {
 		return new Promise((resolve, reject) => {
-			let provider = new firebase.auth.FacebookAuthProvider();
-
-			firebase.auth().signInWithRedirect(provider).then(() => {
-				firebase.auth().getRedirectResult().then((result) => {
-					resolve(result);
+			// let provider = new firebase.auth.FacebookAuthProvider();
+			// firebase.auth().signInWithRedirect(provider).then(() => {
+			// 	firebase.auth().getRedirectResult().then((result) => {
+			// 		resolve(result);
+			// 	})
+			// 	.catch(err => {
+			// 		reject(err);
+			// 	})
+			// })
+			// .catch(err => {
+			// 	reject(err);
+			// })
+			this.fb.login(["email"]).then((res) => {
+				// console.log(new firebase.auth.FacebookAuthProvider.credential(res.authResponse.accessToken));
+				let credential = firebase.auth.FacebookAuthProvider.credential(res.authResponse.accessToken);
+				this.firebaseAuth.auth.signInWithCredential(credential).then((info) => {
+						resolve(info);
 				})
-				.catch(err => {
-					reject(err);
-				})
-			})
-			.catch(err => {
-				reject(err);
 			})
 		})
 	}
