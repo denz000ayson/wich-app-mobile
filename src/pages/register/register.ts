@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController, ViewController } from 'ionic-angular';
 import { User } from "../../services/user/user.model";
 import { UserService } from "../../services/user/user.service";
 import { SignEmail } from './modal/sign-email/sign-email';
@@ -18,6 +18,7 @@ export class RegisterPage {
   	public navCtrl: NavController,
   	public navParams: NavParams,
   	public userService : UserService,
+    public viewCtrl: ViewController,
     private modal: ModalController) {
   }
 
