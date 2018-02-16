@@ -83,14 +83,6 @@ var RegisterPage = (function () {
     RegisterPage.prototype.ionViewWillEnter = function () {
         this.userService.getData();
     };
-    RegisterPage.prototype.register = function (user) {
-        var _this = this;
-        this.userService.userRegister.signUpWithEmail(user)
-            .then(function (res) {
-            _this.navCtrl.setRoot(HomePage);
-        })
-            .catch(function (err) { console.log(err); });
-    };
     RegisterPage.prototype.openSignUpEmail = function () {
         var signUpEmail = this.modal.create(__WEBPACK_IMPORTED_MODULE_3__modal_sign_email_sign_email__["a" /* SignEmail */]);
         signUpEmail.present();

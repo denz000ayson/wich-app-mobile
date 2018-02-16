@@ -3,6 +3,12 @@
     <name>Wich App</name>
     <description>wich App</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
+    <universal-links>
+        <host name="https://aruy5.app.goo.gl" scheme="https" />
+        <host name="wichappdb.firebaseapp.com" scheme="https">
+            <path url="/__/auth/callback" />
+        </host>
+    </universal-links>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />

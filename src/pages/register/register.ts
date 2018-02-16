@@ -24,15 +24,7 @@ export class RegisterPage {
   ionViewWillEnter() {
     this.userService.getData();
   }
-
-  register(user : User){
-  	this.userService.userRegister.signUpWithEmail(user)
-  		.then(res => {
-  			 this.navCtrl.setRoot(HomePage);
-  		})
-  		.catch(err => { console.log(err) })
-  }
-
+  
   openSignUpEmail() {
     let signUpEmail = this.modal.create(SignEmail);
     signUpEmail.present();
