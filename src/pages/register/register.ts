@@ -4,7 +4,7 @@ import { User } from "../../services/user/user.model";
 import { UserService } from "../../services/user/user.service";
 import { SignEmail } from './modal/sign-email/sign-email';
 import { SignMobile } from './modal/sign-mobile/sign-mobile';
-import { ResetPassword } from './modal/reset-password/reset-password';
+
 
 @IonicPage()
 @Component({
@@ -24,7 +24,15 @@ export class RegisterPage {
   ionViewWillEnter() {
     this.userService.getData();
   }
-  
+
+  register(user : User){
+  	this.userService.userRegister.signUpWithEmail(user)
+  		.then(res => {
+  			 this.viewCtrl.dismiss();
+  		})
+  		.catch(err => { console.log(err) })
+  }
+
   openSignUpEmail() {
     let signUpEmail = this.modal.create(SignEmail);
     signUpEmail.present();
@@ -34,8 +42,5 @@ export class RegisterPage {
     let signUpMobile = this.modal.create(SignMobile);
     signUpMobile.present();
   }
-  openResetPassword() {
-    let resetPassword = this.modal.create(ResetPassword);
-    resetPassword.present();
-  }
+
 }

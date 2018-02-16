@@ -6,6 +6,28 @@ page-login {
         padding-right: 0;
 
         border-bottom: 0 solid #fff;
+
+        .label {
+          margin: 0;
+
+          .img-loaded {
+            margin-top: 11px;
+            margin-left: 23px;
+          }
+        }
+      }
+
+      &.reset-password {
+        text-align: center;
+
+        border-bottom: none;
+
+        a {
+          font-size: 12px;
+          letter-spacing: 1px;
+          color:#000;
+          text-decoration: none;
+        }
       }
     }
 
@@ -25,25 +47,14 @@ page-login {
       }
     }
 
-    // ion-item {
-    //   ion-input {
-    //     width: 100%;
-    //
-    //     &.rounded {
-    //       margin-bottom: 10px;
-    //
-    //       border: 1px double #008f51;
-    //       border-radius: 15px;
-    //     }
-    //   }
-    // }
-
     ::placeholder {
       color: #008f51;
     }
 
     .text-input {
-      padding: 0 0 0 20px;
+      padding: 0 0 0 0;
+
+      font-size: 14px;
     }
 
     .text-input-wp {
@@ -55,6 +66,17 @@ page-login {
     .btn-google,
     .btn-register {
       width: 100%;
+
+      font-size: 14px;
+
+      .button-inner {
+        ion-img {
+          &.img-loaded {
+            position: absolute;
+            left: 6%;
+          }
+        }
+      }
     }
 
     .btn-facebook {
@@ -66,5 +88,7 @@ page-login {
 
       font-size: 24px;
     }
+
+
   }
 }

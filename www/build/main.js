@@ -1,14 +1,85 @@
 webpackJsonp([3],{
 
-/***/ 202:
+/***/ 199:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 199;
+
+/***/ }),
+
+/***/ 259:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return CONFIG_FIREBASE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CONFIG_FILE_URL; });
+var CONFIG_FIREBASE = {
+    apiKey: "AIzaSyBeuYKqRwAlduf-A7D1frg_uajVR63JCIA",
+    authDomain: "wichappdb.firebaseapp.com",
+    databaseURL: "https://wichappdb.firebaseio.com",
+    projectId: "wichappdb",
+    storageBucket: "wichappdb.appspot.com",
+    messagingSenderId: "224792191909"
+};
+var CONFIG_FILE_URL = {
+    baseUrl: 'https://firebasestorage.googleapis.com/v0/b/wichappdb.appspot.com/o/',
+};
+//# sourceMappingURL=config.js.map
+
+/***/ }),
+
+/***/ 301:
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"../pages/register/modal/sign-email/sign-email.module": [
+		807,
+		2
+	],
+	"../pages/register/modal/sign-mobile/sign-mobile.module": [
+		808,
+		1
+	],
+	"../pages/register/register.module": [
+		809,
+		0
+	]
+};
+function webpackAsyncContext(req) {
+	var ids = map[req];
+	if(!ids)
+		return Promise.reject(new Error("Cannot find module '" + req + "'."));
+	return __webpack_require__.e(ids[1]).then(function() {
+		return __webpack_require__(ids[0]);
+	});
+};
+webpackAsyncContext.keys = function webpackAsyncContextKeys() {
+	return Object.keys(map);
+};
+webpackAsyncContext.id = 301;
+module.exports = webpackAsyncContext;
+
+/***/ }),
+
+/***/ 426:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_user_user_service__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_user_user_service__ = __webpack_require__(55);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -43,7 +114,7 @@ var HomePage = (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/home/fullstack/Documents/angular/wich-app-mobile/src/pages/home/home.html"*/`<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n</ion-content>\n`/*ion-inline-end:"/home/fullstack/Documents/angular/wich-app-mobile/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/home/fullstack/Documents/angular/wichAppMobile/src/pages/home/home.html"*/`<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n</ion-content>\n`/*ion-inline-end:"/home/fullstack/Documents/angular/wichAppMobile/src/pages/home/home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */],
@@ -56,66 +127,17 @@ var HomePage = (function () {
 
 /***/ }),
 
-/***/ 215:
-/***/ (function(module, exports) {
-
-function webpackEmptyAsyncContext(req) {
-	// Here Promise.resolve().then() is used instead of new Promise() to prevent
-	// uncatched exception popping up in devtools
-	return Promise.resolve().then(function() {
-		throw new Error("Cannot find module '" + req + "'.");
-	});
-}
-webpackEmptyAsyncContext.keys = function() { return []; };
-webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
-module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 215;
-
-/***/ }),
-
-/***/ 317:
-/***/ (function(module, exports, __webpack_require__) {
-
-var map = {
-	"../pages/register/modal/sign-email/sign-email.module": [
-		863,
-		2
-	],
-	"../pages/register/modal/sign-mobile/sign-mobile.module": [
-		864,
-		1
-	],
-	"../pages/register/register.module": [
-		865,
-		0
-	]
-};
-function webpackAsyncContext(req) {
-	var ids = map[req];
-	if(!ids)
-		return Promise.reject(new Error("Cannot find module '" + req + "'."));
-	return __webpack_require__.e(ids[1]).then(function() {
-		return __webpack_require__(ids[0]);
-	});
-};
-webpackAsyncContext.keys = function webpackAsyncContextKeys() {
-	return Object.keys(map);
-};
-webpackAsyncContext.id = 317;
-module.exports = webpackAsyncContext;
-
-/***/ }),
-
-/***/ 451:
+/***/ 427:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_user_user_service__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_home__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_user_user_service__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__modal_reset_password_reset_password__ = __webpack_require__(428);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_config__ = __webpack_require__(259);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -130,12 +152,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var LoginPage = (function () {
-    function LoginPage(navCtrl, navParams, userService, storage) {
+    function LoginPage(navCtrl, navParams, userService, storage, modal) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.userService = userService;
         this.storage = storage;
+        this.modal = modal;
+        this.config = __WEBPACK_IMPORTED_MODULE_5__shared_config__["a" /* CONFIG_FILE_URL */];
         this.user = {};
     }
     LoginPage.prototype.login = function (user) {
@@ -144,7 +169,7 @@ var LoginPage = (function () {
             var user_id = {};
             user_id = user;
             _this.storage.set('user_id', user_id.uid);
-            _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_4__home_home__["a" /* HomePage */]);
+            // this.navCtrl.setRoot(HomePage);
         })
             .catch(function (err) {
             console.log(err);
@@ -153,23 +178,19 @@ var LoginPage = (function () {
     LoginPage.prototype.register = function () {
         this.navCtrl.push('RegisterPage');
     };
-    LoginPage.prototype.loginWithFaceBook = function () {
-        console.log('test');
-        this.userService.userLogin.signInWithFaceBook().then(function (user) {
-            console.log(user);
-        })
-            .catch(function (err) {
-            console.log(err);
-        });
+    LoginPage.prototype.openResetPassword = function () {
+        var resetPassword = this.modal.create(__WEBPACK_IMPORTED_MODULE_4__modal_reset_password_reset_password__["a" /* ResetPassword */]);
+        resetPassword.present();
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"/home/fullstack/Documents/angular/wich-app-mobile/src/pages/login/login.html"*/`<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Login</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <div class="container">\n    <ion-list>\n      <ion-item>\n        <ion-icon name="mail" item-left></ion-icon>\n        <ion-input type="text" value="" placeholder="Email Address" [(ngModel)]="user.email"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-icon name="key" item-left></ion-icon>\n        <ion-input class="rounded" type="password" value="" placeholder="Password" [(ngModel)]="user.password"></ion-input>\n      </ion-item>\n\n      <button class="btn-login" ion-button color="secondary" (click)="login(user)">Login</button>\n      <button class="btn-facebook" ion-button><ion-icon name="logo-facebook" (click)="loginWithFaceBook()"></ion-icon> Continue with Facebook</button>\n      <button class="btn-google" ion-button><ion-icon ios="ios-mail" md="md-mail"></ion-icon> Continue with Google</button>\n      <button class="btn-register" ion-button color="secondary" (click)="register()">or create an account..</button>\n    </ion-list>\n  </div>\n</ion-content>\n\n<!-- <ion-content>\n  <ion-item>\n    <ion-label floating>Email</ion-label>\n    <ion-input type="text" [(ngModel)]="user.email"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Password</ion-label>\n<<<<<<< HEAD\n    <ion-input type="password" [(ngModel)]="user.password"></ion-input>\n  </ion-item>\n  <button ion-button (click)="login()">Login</button>\n=======\n    <ion-input type="password" [(ngModel)]="user.password"></ion-input>\n  </ion-item>\n  <button ion-button (click)="login(user)">Login</button>\n>>>>>>> 9a71b9854a39fc6e8e42612c047523bb22d466e4\n  <button ion-button (click)="register()">Register</button>\n</ion-content> -->\n`/*ion-inline-end:"/home/fullstack/Documents/angular/wich-app-mobile/src/pages/login/login.html"*/
+            selector: 'page-login',template:/*ion-inline-start:"/home/fullstack/Documents/angular/wichAppMobile/src/pages/login/login.html"*/`<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Login</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <div class="container">\n    <ion-list>\n      <ion-item>\n        <ion-label>\n          <ion-img src="{{config.baseUrl + \'assets%2Ficons%2Fmail.png?alt=media&token=766c4865-a3f9-4789-9d99-56c957c989ad\'}}"></ion-img>\n        </ion-label>\n\n        <ion-input type="text" value="" placeholder="Email Address" [(ngModel)]="user.email"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label>\n          <ion-img src="{{config.baseUrl + \'assets%2Ficons%2Fkey.png?alt=media&token=c103897e-9f62-4cc8-92ea-e2d68cc6c06d\'}}"></ion-img>\n        </ion-label>\n\n        <ion-input class="rounded" type="password" value="" placeholder="Password" [(ngModel)]="user.password"></ion-input>\n      </ion-item>\n\n      <button class="btn-login" ion-button color="secondary" (click)="login(user)">\n        <ion-img src="{{config.baseUrl + \'assets%2Ficons%2Fwich-app-logo.png?alt=media&token=bc49ac82-97c2-478d-868c-10358fcc4bcf\'}}" item-left></ion-img>\n        Login\n      </button>\n\n      <button class="btn-facebook" ion-button>\n        <ion-img src="{{config.baseUrl + \'assets%2Ficons%2Ffb.png?alt=media&token=80095f87-7cdc-4e1d-88ae-b44cb615551f\'}}"></ion-img>\n        Continue with Facebook\n      </button>\n\n      <button class="btn-google" ion-button>\n        <ion-img src="{{config.baseUrl + \'assets%2Ficons%2Fgoogle.png?alt=media&token=5552a20d-ef49-4cab-96da-c38fdf55cbb9\'}}"></ion-img>\n        Continue with Google\n      </button>\n\n      <button class="btn-register" ion-button color="secondary" (click)="register()">or create an account..</button>\n\n      <ion-item class="reset-password">\n        <a (click)="openResetPassword()">Forgot your password?</a>\n      </ion-item>\n    </ion-list>\n  </div>\n</ion-content>\n`/*ion-inline-end:"/home/fullstack/Documents/angular/wichAppMobile/src/pages/login/login.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_2__services_user_user_service__["a" /* UserService */],
-            __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */]])
+            __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */]])
     ], LoginPage);
     return LoginPage;
 }());
@@ -178,14 +199,65 @@ var LoginPage = (function () {
 
 /***/ }),
 
-/***/ 452:
+/***/ 428:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ResetPassword; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_user_user_service__ = __webpack_require__(55);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var ResetPassword = (function () {
+    function ResetPassword(viewCtrl, userService) {
+        this.viewCtrl = viewCtrl;
+        this.userService = userService;
+    }
+    ResetPassword.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    ResetPassword.prototype.resetPassword = function (email) {
+        var _this = this;
+        this.userService.fetchUser.resetPassword(email).then(function (user) {
+            _this.viewCtrl.dismiss();
+        })
+            .catch(function (err) {
+            console.log(err);
+        });
+    };
+    ResetPassword = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'reset-password',template:/*ion-inline-start:"/home/fullstack/Documents/angular/wichAppMobile/src/pages/login/modal/reset-password/reset-password.html"*/`<ion-header>\n\n  <ion-navbar>\n    <ion-title>Reset Password</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-list>\n    <ion-item class="section-new-password">\n      <ion-input type="text" value="" placeholder="Mobile number"></ion-input>\n    </ion-item>\n\n    <button class="btn-reset-password" ion-button name="button" (click)="resetPassword(email)">Reset Password</button>\n  </ion-list>\n</ion-content>\n`/*ion-inline-end:"/home/fullstack/Documents/angular/wichAppMobile/src/pages/login/modal/reset-password/reset-password.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_2__services_user_user_service__["a" /* UserService */]])
+    ], ResetPassword);
+    return ResetPassword;
+}());
+
+//# sourceMappingURL=reset-password.js.map
+
+/***/ }),
+
+/***/ 429:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SignEmail; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_user_user_service__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_user_user_service__ = __webpack_require__(55);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -223,7 +295,7 @@ var SignEmail = (function () {
     };
     SignEmail = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-sign-email',template:/*ion-inline-start:"/home/fullstack/Documents/angular/wich-app-mobile/src/pages/register/modal/sign-email/sign-email.html"*/`<ion-header>\n  <ion-navbar>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()"><ion-icon name="close" item-right></ion-icon></button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n<ion-content padding>\n  <div class="container">\n    <ion-list>\n      <ion-item class="section-sign-up">\n        Sign up with <a href="">Facebook</a>, <a href="">Google</a> or <a href="">mobile number</a>\n      </ion-item>\n\n      <ion-item class="or">\n        <hr class="divider">\n      </ion-item>\n\n      <ion-item class="form-holder">\n        <ion-input placeholder="Name" [(ngModel)]="user.name"></ion-input>\n      </ion-item>\n\n      <ion-item class="form-holder">\n        <ion-input placeholder="Email Address" [(ngModel)]="user.email"></ion-input>\n      </ion-item>\n\n      <ion-item class="form-holder">\n        <ion-input placeholder="Phone" [(ngModel)]="user.phone"></ion-input>\n      </ion-item>\n\n      <ion-item class="form-holder">\n        <ion-input type="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" [(ngModel)]="user.password"></ion-input>\n        <!-- <ion-label item-right>Show</ion-label> -->\n      </ion-item>\n\n      <button class="btn-sign-up" ion-button name="button" (click)="register(user)">Sign Up</button>\n\n\n      <hr>\n      <ion-item class="ask-question">\n        Already have an account? <a href="#">Log in</a>\n      </ion-item>\n    </ion-list>\n  </div>\n</ion-content>\n`/*ion-inline-end:"/home/fullstack/Documents/angular/wich-app-mobile/src/pages/register/modal/sign-email/sign-email.html"*/,
+            selector: 'page-sign-email',template:/*ion-inline-start:"/home/fullstack/Documents/angular/wichAppMobile/src/pages/register/modal/sign-email/sign-email.html"*/`<ion-header>\n  <ion-navbar>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()"><ion-icon name="close" item-right></ion-icon></button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n<ion-content padding>\n  <div class="container">\n    <ion-list>\n      <ion-item class="section-sign-up">\n        Sign up with <a href="">Facebook</a>, <a href="">Google</a> or <a href="">mobile number</a>\n      </ion-item>\n\n      <ion-item class="or">\n        <hr class="divider">\n      </ion-item>\n\n      <ion-item class="form-holder">\n        <ion-input placeholder="Name" [(ngModel)]="user.name"></ion-input>\n      </ion-item>\n\n      <ion-item class="form-holder">\n        <ion-input placeholder="Email Address" [(ngModel)]="user.email"></ion-input>\n      </ion-item>\n\n      <ion-item class="form-holder">\n        <ion-input placeholder="Phone" [(ngModel)]="user.phone"></ion-input>\n      </ion-item>\n\n      <ion-item class="form-holder">\n        <ion-input type="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" [(ngModel)]="user.password"></ion-input>\n        <!-- <ion-label item-right>Show</ion-label> -->\n      </ion-item>\n\n      <button class="btn-sign-up" ion-button name="button" (click)="register(user)">Sign Up</button>\n\n\n      <hr>\n      <ion-item class="ask-question">\n        Already have an account? <a href="#">Log in</a>\n      </ion-item>\n    </ion-list>\n  </div>\n</ion-content>\n`/*ion-inline-end:"/home/fullstack/Documents/angular/wichAppMobile/src/pages/register/modal/sign-email/sign-email.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */],
@@ -237,13 +309,13 @@ var SignEmail = (function () {
 
 /***/ }),
 
-/***/ 453:
+/***/ 430:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SignMobile; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(43);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -269,7 +341,7 @@ var SignMobile = (function () {
     };
     SignMobile = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-sign-mobile',template:/*ion-inline-start:"/home/fullstack/Documents/angular/wich-app-mobile/src/pages/register/modal/sign-mobile/sign-mobile.html"*/`<ion-header>\n\n  <ion-navbar>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()"><ion-icon name="close" item-right></ion-icon></button>\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <div class="container">\n    <ion-list>\n      <ion-item class="section-sign-up">\n        Sign up with <a href="">Facebook</a>, <a href="">Google</a> or <a href="">mobile number</a>\n      </ion-item>\n\n      <ion-item class="or">\n        <hr class="divider">\n      </ion-item>\n\n      <ion-item class="section-label">\n        Enter your mobile number\n      </ion-item>\n\n      <ion-item class="section-enter-number">\n        <ion-input type="text" value="" placeholder="Mobile number"></ion-input>\n      </ion-item>\n\n      <button class="btn-sign-up" ion-button name="button">Sign Up</button>\n\n      <hr>\n      <ion-item class="ask-question">\n        Already have an account? <a href="#">Log in</a>\n      </ion-item>\n    </ion-list>\n  </div>\n</ion-content>\n`/*ion-inline-end:"/home/fullstack/Documents/angular/wich-app-mobile/src/pages/register/modal/sign-mobile/sign-mobile.html"*/,
+            selector: 'page-sign-mobile',template:/*ion-inline-start:"/home/fullstack/Documents/angular/wichAppMobile/src/pages/register/modal/sign-mobile/sign-mobile.html"*/`<ion-header>\n\n  <ion-navbar>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()"><ion-icon name="close" item-right></ion-icon></button>\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <div class="container">\n    <ion-list>\n      <ion-item class="section-sign-up">\n        Sign up with <a href="">Facebook</a>, <a href="">Google</a> or <a href="">mobile number</a>\n      </ion-item>\n\n      <ion-item class="or">\n        <hr class="divider">\n      </ion-item>\n\n      <ion-item class="section-label">\n        Enter your mobile number\n      </ion-item>\n\n      <ion-item class="section-enter-number">\n        <ion-input type="text" value="" placeholder="Mobile number"></ion-input>\n      </ion-item>\n\n      <button class="btn-sign-up" ion-button name="button">Sign Up</button>\n\n      <hr>\n      <ion-item class="ask-question">\n        Already have an account? <a href="#">Log in</a>\n      </ion-item>\n    </ion-list>\n  </div>\n</ion-content>\n`/*ion-inline-end:"/home/fullstack/Documents/angular/wichAppMobile/src/pages/register/modal/sign-mobile/sign-mobile.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */],
@@ -282,63 +354,13 @@ var SignMobile = (function () {
 
 /***/ }),
 
-/***/ 454:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ResetPassword; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_user_user_service__ = __webpack_require__(60);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var ResetPassword = (function () {
-    function ResetPassword(viewCtrl, userService) {
-        this.viewCtrl = viewCtrl;
-        this.userService = userService;
-    }
-    ResetPassword.prototype.dismiss = function () {
-        this.viewCtrl.dismiss();
-    };
-    ResetPassword.prototype.resetPassword = function (email) {
-        var _this = this;
-        this.userService.fetchUser.resetPassword(email).then(function (user) {
-            _this.viewCtrl.dismiss();
-        })
-            .catch(function (err) {
-            console.log(err);
-        });
-    };
-    ResetPassword = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/fullstack/Documents/angular/wich-app-mobile/src/pages/register/modal/reset-password/reset-password.html"*/`<ion-header>\n  <ion-navbar>\n  <ion-buttons start>\n      <button ion-button (click)="dismiss()">\n          <ion-icon name="close" item-right></ion-icon>\n      </button>\n  </ion-buttons>\n</ion-navbar>\n</ion-header>\n<ion-content padding>\n  <div class="container">\n    <ion-list>\n      <ion-item>\n        <ion-icon name="mail" item-left></ion-icon>\n        <ion-input type="email" value="" placeholder="Email Address" [(ngModel)]="email"></ion-input>\n      </ion-item>\n      <button class="btn-login" ion-button color="secondary" (click)="resetPassword(email)">Reset Password</button>\n    </ion-list>\n  </div>\n</ion-content>`/*ion-inline-end:"/home/fullstack/Documents/angular/wich-app-mobile/src/pages/register/modal/reset-password/reset-password.html"*/
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ViewController */],
-            __WEBPACK_IMPORTED_MODULE_2__services_user_user_service__["a" /* UserService */]])
-    ], ResetPassword);
-    return ResetPassword;
-}());
-
-//# sourceMappingURL=reset-password.js.map
-
-/***/ }),
-
-/***/ 455:
+/***/ 431:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(456);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(460);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(432);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(436);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -346,29 +368,28 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 460:
+/***/ 436:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ionic_native_status_bar__ = __webpack_require__(216);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_splash_screen__ = __webpack_require__(220);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angularfire2_auth__ = __webpack_require__(226);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angularfire2_database__ = __webpack_require__(233);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_config__ = __webpack_require__(533);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_platform_browser__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ionic_native_status_bar__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_splash_screen__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angularfire2_auth__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angularfire2_database__ = __webpack_require__(217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_config__ = __webpack_require__(259);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_platform_browser__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_ionic_angular__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_storage__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_facebook__ = __webpack_require__(318);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__app_component__ = __webpack_require__(862);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_home_home__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_login_login__ = __webpack_require__(451);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_register_modal_sign_email_sign_email__ = __webpack_require__(452);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_register_modal_sign_mobile_sign_mobile__ = __webpack_require__(453);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_register_modal_reset_password_reset_password__ = __webpack_require__(454);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__services_user_user_service__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_ionic_angular__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_storage__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_component__ = __webpack_require__(806);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_home_home__ = __webpack_require__(426);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_login_login__ = __webpack_require__(427);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_register_modal_sign_email_sign_email__ = __webpack_require__(429);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_register_modal_sign_mobile_sign_mobile__ = __webpack_require__(430);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_login_modal_reset_password_reset_password__ = __webpack_require__(428);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__services_user_user_service__ = __webpack_require__(55);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -376,7 +397,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 //Modules
-
 
 
 
@@ -403,44 +423,43 @@ var AppModule = (function () {
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_7__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_11__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_12__pages_home_home__["a" /* HomePage */],
-                __WEBPACK_IMPORTED_MODULE_13__pages_login_login__["a" /* LoginPage */],
+                __WEBPACK_IMPORTED_MODULE_10__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_11__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_12__pages_login_login__["a" /* LoginPage */],
                 //Modals
-                __WEBPACK_IMPORTED_MODULE_14__pages_register_modal_sign_email_sign_email__["a" /* SignEmail */],
-                __WEBPACK_IMPORTED_MODULE_15__pages_register_modal_sign_mobile_sign_mobile__["a" /* SignMobile */],
-                __WEBPACK_IMPORTED_MODULE_16__pages_register_modal_reset_password_reset_password__["a" /* ResetPassword */]
+                __WEBPACK_IMPORTED_MODULE_13__pages_register_modal_sign_email_sign_email__["a" /* SignEmail */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_register_modal_sign_mobile_sign_mobile__["a" /* SignMobile */],
+                __WEBPACK_IMPORTED_MODULE_15__pages_login_modal_reset_password_reset_password__["a" /* ResetPassword */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_6__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_8_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_11__app_component__["a" /* MyApp */], {}, {
+                __WEBPACK_IMPORTED_MODULE_8_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_10__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/register/modal/sign-email/sign-email.module#SignEmailPageModule', name: 'SignEmail', segment: 'sign-email', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/register/modal/sign-mobile/sign-mobile.module#SignMobilePageModule', name: 'SignMobile', segment: 'sign-mobile', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/register/register.module#RegisterPageModule', name: 'RegisterPage', segment: 'register', priority: 'low', defaultHistory: [] }
                     ]
                 }),
-                __WEBPACK_IMPORTED_MODULE_2_angularfire2__["a" /* AngularFireModule */].initializeApp(__WEBPACK_IMPORTED_MODULE_5__shared_config__["a" /* CONFIG_FIREBASE */]),
+                __WEBPACK_IMPORTED_MODULE_2_angularfire2__["a" /* AngularFireModule */].initializeApp(__WEBPACK_IMPORTED_MODULE_5__shared_config__["b" /* CONFIG_FIREBASE */]),
                 __WEBPACK_IMPORTED_MODULE_3_angularfire2_auth__["b" /* AngularFireAuthModule */],
                 __WEBPACK_IMPORTED_MODULE_4_angularfire2_database__["b" /* AngularFireDatabaseModule */],
                 __WEBPACK_IMPORTED_MODULE_9__ionic_storage__["a" /* IonicStorageModule */].forRoot()
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_8_ionic_angular__["a" /* IonicApp */]],
             entryComponents: [
-                __WEBPACK_IMPORTED_MODULE_11__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_12__pages_home_home__["a" /* HomePage */],
-                __WEBPACK_IMPORTED_MODULE_13__pages_login_login__["a" /* LoginPage */],
+                __WEBPACK_IMPORTED_MODULE_10__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_11__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_12__pages_login_login__["a" /* LoginPage */],
                 //Modals
-                __WEBPACK_IMPORTED_MODULE_14__pages_register_modal_sign_email_sign_email__["a" /* SignEmail */],
-                __WEBPACK_IMPORTED_MODULE_15__pages_register_modal_sign_mobile_sign_mobile__["a" /* SignMobile */],
-                __WEBPACK_IMPORTED_MODULE_16__pages_register_modal_reset_password_reset_password__["a" /* ResetPassword */]
+                __WEBPACK_IMPORTED_MODULE_13__pages_register_modal_sign_email_sign_email__["a" /* SignEmail */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_register_modal_sign_mobile_sign_mobile__["a" /* SignMobile */],
+                __WEBPACK_IMPORTED_MODULE_15__pages_login_modal_reset_password_reset_password__["a" /* ResetPassword */]
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_0__ionic_native_status_bar__["a" /* StatusBar */],
                 __WEBPACK_IMPORTED_MODULE_1__ionic_native_splash_screen__["a" /* SplashScreen */],
                 { provide: __WEBPACK_IMPORTED_MODULE_7__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_8_ionic_angular__["b" /* IonicErrorHandler */] },
-                __WEBPACK_IMPORTED_MODULE_10__ionic_native_facebook__["a" /* Facebook */],
-                __WEBPACK_IMPORTED_MODULE_17__services_user_user_service__["a" /* UserService */]
+                __WEBPACK_IMPORTED_MODULE_16__services_user_user_service__["a" /* UserService */]
             ]
         })
     ], AppModule);
@@ -451,36 +470,16 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 533:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CONFIG_FIREBASE; });
-var CONFIG_FIREBASE = {
-    apiKey: "AIzaSyBeuYKqRwAlduf-A7D1frg_uajVR63JCIA",
-    authDomain: "wichappdb.firebaseapp.com",
-    databaseURL: "https://wichappdb.firebaseio.com",
-    projectId: "wichappdb",
-    storageBucket: "wichappdb.appspot.com",
-    messagingSenderId: "224792191909"
-};
-//# sourceMappingURL=config.js.map
-
-/***/ }),
-
-/***/ 60:
+/***/ 55:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angularfire2_auth__ = __webpack_require__(226);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__ = __webpack_require__(233);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_facebook__ = __webpack_require__(318);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Rx__ = __webpack_require__(553);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_Rx__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_firebase__ = __webpack_require__(809);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_firebase__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angularfire2_auth__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__ = __webpack_require__(217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Rx__ = __webpack_require__(530);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_Rx__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -494,15 +493,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
-//we use main firebase plugin for facebook login
-
 var UserService = (function () {
-    function UserService(firebaseAuth, firebaseList, fb) {
+    function UserService(firebaseAuth, firebaseList) {
         var _this = this;
         this.firebaseAuth = firebaseAuth;
         this.firebaseList = firebaseList;
-        this.fb = fb;
         this.user = {};
         this.userRegister = {
             signUpWithEmail: function (userForm) {
@@ -532,29 +527,6 @@ var UserService = (function () {
                     });
                 });
             },
-            signInWithFaceBook: function () {
-                return new Promise(function (resolve, reject) {
-                    // let provider = new firebase.auth.FacebookAuthProvider();
-                    // firebase.auth().signInWithRedirect(provider).then(() => {
-                    // 	firebase.auth().getRedirectResult().then((result) => {
-                    // 		resolve(result);
-                    // 	})
-                    // 	.catch(err => {
-                    // 		reject(err);
-                    // 	})
-                    // })
-                    // .catch(err => {
-                    // 	reject(err);
-                    // })
-                    _this.fb.login(["email"]).then(function (res) {
-                        // console.log(new firebase.auth.FacebookAuthProvider.credential(res.authResponse.accessToken));
-                        var credential = __WEBPACK_IMPORTED_MODULE_5_firebase___default.a.auth.FacebookAuthProvider.credential(res.authResponse.accessToken);
-                        _this.firebaseAuth.auth.signInWithCredential(credential).then(function (info) {
-                            resolve(info);
-                        });
-                    });
-                });
-            }
         };
         this.fetchUser = {
             viewUser: function (user_id) {
@@ -586,8 +558,7 @@ var UserService = (function () {
     UserService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_angularfire2_auth__["a" /* AngularFireAuth */],
-            __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__["a" /* AngularFireDatabase */],
-            __WEBPACK_IMPORTED_MODULE_3__ionic_native_facebook__["a" /* Facebook */]])
+            __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__["a" /* AngularFireDatabase */]])
     ], UserService);
     return UserService;
 }());
@@ -596,17 +567,17 @@ var UserService = (function () {
 
 /***/ }),
 
-/***/ 862:
+/***/ 806:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(216);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(220);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_login_login__ = __webpack_require__(451);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(426);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_login_login__ = __webpack_require__(427);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -654,7 +625,7 @@ var MyApp = (function () {
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/fullstack/Documents/angular/wich-app-mobile/src/app/app.html"*/`<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>`/*ion-inline-end:"/home/fullstack/Documents/angular/wich-app-mobile/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/fullstack/Documents/angular/wichAppMobile/src/app/app.html"*/`<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>`/*ion-inline-end:"/home/fullstack/Documents/angular/wichAppMobile/src/app/app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
@@ -665,5 +636,5 @@ var MyApp = (function () {
 
 /***/ })
 
-},[455]);
+},[431]);
 //# sourceMappingURL=main.js.map

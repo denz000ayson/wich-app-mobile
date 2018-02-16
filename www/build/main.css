@@ -25678,9 +25678,34 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
+ion-img {
+  background: transparent;
+}
+
 page-login .list .item-block .item-inner {
   padding-right: 0;
   border-bottom: 0 solid #fff;
+}
+
+page-login .list .item-block .item-inner .label {
+  margin: 0;
+}
+
+page-login .list .item-block .item-inner .label .img-loaded {
+  margin-top: 11px;
+  margin-left: 23px;
+}
+
+page-login .list .item-block.reset-password {
+  text-align: center;
+  border-bottom: none;
+}
+
+page-login .list .item-block.reset-password a {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #000;
+  text-decoration: none;
 }
 
 page-login .list > .item-block:first-child,
@@ -25715,7 +25740,8 @@ page-login .list ::placeholder {
 }
 
 page-login .list .text-input {
-  padding: 0 0 0 20px;
+  padding: 0 0 0 0;
+  font-size: 14px;
 }
 
 page-login .list .text-input-wp {
@@ -25727,6 +25753,15 @@ page-login .list .btn-facebook,
 page-login .list .btn-google,
 page-login .list .btn-register {
   width: 100%;
+  font-size: 14px;
+}
+
+page-login .list .btn-login .button-inner ion-img.img-loaded,
+page-login .list .btn-facebook .button-inner ion-img.img-loaded,
+page-login .list .btn-google .button-inner ion-img.img-loaded,
+page-login .list .btn-register .button-inner ion-img.img-loaded {
+  position: absolute;
+  left: 6%;
 }
 
 page-login .list .btn-facebook {
@@ -25736,6 +25771,59 @@ page-login .list .btn-facebook {
 page-login .list ion-icon {
   margin-right: 10px;
   font-size: 24px;
+}
+
+reset-password ion-title .toolbar-title {
+  color: #65b089;
+}
+
+reset-password .list .item-block:last-child, reset-password .list .item-block:first-child {
+  border-bottom: none;
+  border-top: none;
+}
+
+reset-password .list .item-block .item-inner {
+  border-bottom: none;
+}
+
+reset-password .list .item-block .item-inner .label {
+  margin: 0;
+}
+
+reset-password .list .item-block.section-new-password {
+  margin-bottom: 10px;
+  background: #fff;
+  border: 1px solid #008f51;
+}
+
+reset-password .list .item-block ::-webkit-input-placeholder {
+  font-size: 12px;
+  color: #65bd97;
+}
+
+reset-password .list .item-block :-ms-input-placeholder {
+  font-size: 12px;
+  color: #65bd97;
+}
+
+reset-password .list .item-block ::-ms-input-placeholder {
+  font-size: 12px;
+  color: #65bd97;
+}
+
+reset-password .list .item-block ::placeholder {
+  font-size: 12px;
+  color: #65bd97;
+}
+
+reset-password .list .item-block.section-message {
+  font-size: 12px;
+  color: #939393;
+}
+
+reset-password .list .btn-reset-password {
+  width: 100%;
+  background: #008f51;
 }
 
 page-register ion-title .toolbar-title {

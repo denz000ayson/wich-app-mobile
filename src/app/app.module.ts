@@ -9,7 +9,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { IonicStorageModule } from '@ionic/storage';
-import { Facebook } from '@ionic-native/facebook';
+
 //Pages
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -18,7 +18,7 @@ import { LoginPage } from '../pages/login/login';
 //Modals
 import { SignEmail } from '../pages/register/modal/sign-email/sign-email';
 import { SignMobile } from '../pages/register/modal/sign-mobile/sign-mobile';
-import { ResetPassword } from '../pages/register/modal/reset-password/reset-password';
+import { ResetPassword } from '../pages/login/modal/reset-password/reset-password';
 
 //Providers
 import { UserService } from '../services/user/user.service';
@@ -56,7 +56,6 @@ import { UserService } from '../services/user/user.service';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    Facebook,
     UserService
   ]
 })

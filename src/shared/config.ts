@@ -6,3 +6,6 @@ export const CONFIG_FIREBASE = {
     storageBucket: "wichappdb.appspot.com",
     messagingSenderId: "224792191909"
 };
+export const CONFIG_FILE_URL = {
+    baseUrl : 'https://firebasestorage.googleapis.com/v0/b/wichappdb.appspot.com/o/',
+}

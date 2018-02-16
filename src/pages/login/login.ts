@@ -1,21 +1,24 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, ModalController } from 'ionic-angular';
 import { User } from "../../services/user/user.model";
 import { UserService } from "../../services/user/user.service";
 import { Storage } from '@ionic/storage';
 import { HomePage } from '../home/home';
-
+import { ResetPassword } from './modal/reset-password/reset-password';
+import { CONFIG_FILE_URL } from '../../shared/config';
 @Component({
   selector: 'page-login',
   templateUrl: 'login.html'
 })
 export class LoginPage {
+  config = CONFIG_FILE_URL;
   user = {} as User;
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
     public userService : UserService,
-    public storage : Storage) {
+    public storage : Storage,
+    private modal: ModalController) {
   }
 
   login(user : User){
@@ -23,7 +26,7 @@ export class LoginPage {
       let user_id = {} as any;
       user_id = user;
       this.storage.set('user_id', user_id.uid);
-      this.navCtrl.setRoot(HomePage);
+      // this.navCtrl.setRoot(HomePage);
     })
     .catch(err => {
       console.log(err);
@@ -33,14 +36,9 @@ export class LoginPage {
   register(){
     this.navCtrl.push('RegisterPage');
   }
-
-  loginWithFaceBook() {
-    console.log('test');
-    this.userService.userLogin.signInWithFaceBook().then(user =>{
-      console.log(user);
-    })
-    .catch(err => {
-      console.log(err);
-    })
+  openResetPassword() {
+    let resetPassword = this.modal.create(ResetPassword);
+    resetPassword.present();
   }
+
 }
