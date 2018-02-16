@@ -15,6 +15,11 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 
+//Modals
+import { SignEmail } from '../pages/register/modal/sign-email/sign-email';
+import { SignMobile } from '../pages/register/modal/sign-mobile/sign-mobile';
+import { ResetPassword } from '../pages/register/modal/reset-password/reset-password';
+
 //Providers
 import { UserService } from '../services/user/user.service';
 
@@ -23,7 +28,11 @@ import { UserService } from '../services/user/user.service';
     MyApp,
     HomePage,
     LoginPage,
-  
+    //Modals
+    SignEmail,
+    SignMobile,
+    ResetPassword
+
   ],
   imports: [
     BrowserModule,
@@ -38,6 +47,10 @@ import { UserService } from '../services/user/user.service';
     MyApp,
     HomePage,
     LoginPage,
+    //Modals
+    SignEmail,
+    SignMobile,
+    ResetPassword
   ],
   providers: [
     StatusBar,

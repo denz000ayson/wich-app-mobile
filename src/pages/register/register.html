@@ -1,34 +1,24 @@
-<!--https://bitbucket.org/psdwizardteam/wich-app-mobile
-  Generated template for the RegisterPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
   <ion-navbar>
     <ion-title>Register</ion-title>
   </ion-navbar>
-
 </ion-header>
 
-
 <ion-content padding>
-<ion-item>
-    <ion-label floating>Name</ion-label>
-    <ion-input type="email" [(ngModel)]="user.name"></ion-input> 
-  </ion-item>
-  <ion-item>
-    <ion-label floating>Email</ion-label>
-    <ion-input type="email" [(ngModel)]="user.email"></ion-input> 
-  </ion-item>
-  <ion-item>
-    <ion-label floating>Phone</ion-label>
-    <ion-input type="text" [(ngModel)]="user.phone"></ion-input> 
-  </ion-item>
-  <ion-item>
-    <ion-label floating>Password</ion-label>
-    <ion-input type="password" [(ngModel)]="user.password"></ion-input> 
-  </ion-item>
-  <button ion-button (click)="register(user)">Register</button>
+  <div class="container">
+    <ion-list>
+      <button class="btn-facebook" ion-button><ion-icon name="logo-facebook"></ion-icon> Sign Up with Facebook</button>
+      <button class="btn-google" ion-button><ion-icon name="logo-google"></ion-icon> Sign Up with Google</button>
+      <ion-item class="or">
+        <hr class="divider">
+      </ion-item>
+      <button class="btn-email" ion-button (click)="openSignUpEmail()"><ion-icon ios="ios-mail" md="md-mail"></ion-icon> Sign Up with Email</button>
+      <button class="btn-register" ion-button (click)="openSignUpMobile()"><ion-icon name="phone-portrait"></ion-icon>Sign Up with Mobile number</button>
+       <button class="btn-register" ion-button (click)="openResetPassword()"><ion-icon name="phone-portrait"></ion-icon>Reset Password</button>
+      <hr>
+      <ion-item class="ask-question">
+        Already have an account? <a href="#">Log in</a>
+      </ion-item>
+    </ion-list>
+  </div>
 </ion-content>

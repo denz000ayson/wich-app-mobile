@@ -1,0 +1,40 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()"><ion-icon name="close" item-right></ion-icon></button>
+    </ion-buttons>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="container">
+    <ion-list>
+      <ion-item class="section-sign-up">
+        Sign up with <a href="">Facebook</a>, <a href="">Google</a> or <a href="">mobile number</a>
+      </ion-item>
+
+      <ion-item class="or">
+        <hr class="divider">
+      </ion-item>
+
+      <ion-item class="section-label">
+        Enter your mobile number
+      </ion-item>
+
+      <ion-item class="section-enter-number">
+        <ion-input type="text" value="" placeholder="Mobile number"></ion-input>
+      </ion-item>
+
+      <button class="btn-sign-up" ion-button name="button">Sign Up</button>
+
+      <hr>
+      <ion-item class="ask-question">
+        Already have an account? <a href="#">Log in</a>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

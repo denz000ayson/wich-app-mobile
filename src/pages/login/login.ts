@@ -17,6 +17,7 @@ export class LoginPage {
     public userService : UserService,
     public storage : Storage) {
   }
+
   login(user : User){
     this.userService.userLogin.signInWithEmail(user).then(user => {
       let user_id = {} as any;
@@ -28,8 +29,18 @@ export class LoginPage {
       console.log(err);
     })
   }
+
   register(){
     this.navCtrl.push('RegisterPage');
   }
-   
+
+  loginWithFaceBook() {
+    console.log('test');
+    this.userService.userLogin.signInWithFaceBook().then(user =>{
+      console.log(user);
+    })
+    .catch(err => {
+      console.log(err);
+    })
+  }
 }

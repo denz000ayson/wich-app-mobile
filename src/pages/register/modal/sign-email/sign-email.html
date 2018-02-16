@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()"><ion-icon name="close" item-right></ion-icon></button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <div class="container">
+    <ion-list>
+      <ion-item class="section-sign-up">
+        Sign up with <a href="">Facebook</a>, <a href="">Google</a> or <a href="">mobile number</a>
+      </ion-item>
+
+      <ion-item class="or">
+        <hr class="divider">
+      </ion-item>
+
+      <ion-item class="form-holder">
+        <ion-input placeholder="Name" [(ngModel)]="user.name"></ion-input>
+      </ion-item>
+
+      <ion-item class="form-holder">
+        <ion-input placeholder="Email Address" [(ngModel)]="user.email"></ion-input>
+      </ion-item>
+
+      <ion-item class="form-holder">
+        <ion-input placeholder="Phone" [(ngModel)]="user.phone"></ion-input>
+      </ion-item>
+
+      <ion-item class="form-holder">
+        <ion-input type="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" [(ngModel)]="user.password"></ion-input>
+        <!-- <ion-label item-right>Show</ion-label> -->
+      </ion-item>
+
+      <button class="btn-sign-up" ion-button name="button" (click)="register(user)">Sign Up</button>
+
+
+      <hr>
+      <ion-item class="ask-question">
+        Already have an account? <a href="#">Log in</a>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

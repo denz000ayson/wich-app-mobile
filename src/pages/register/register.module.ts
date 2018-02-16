@@ -10,7 +10,7 @@ import { IonicStorageModule } from '@ionic/storage';
   ],
   imports: [
     IonicPageModule.forChild(RegisterPage),
-    IonicStorageModule.forRoot()
+    IonicStorageModule.forRoot(),
   ],
   providers :[
   	UserService
